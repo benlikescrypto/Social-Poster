@@ -4,7 +4,7 @@
   "description": "Postiz backend API (NestJS)",
   "scripts": {
   "dev": "nest start --watch",
-  "build": "tsc --project tsconfig.build.json --skipLibCheck --noEmitOnError false",
+  "build": "nest build --path tsconfig.build.json",
   "start": "node dist/src/main.js",
   "start:prod": "node dist/src/main.js"
 },
