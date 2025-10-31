@@ -59,7 +59,7 @@ httpAdapter.get('/', (req, res) => {
   res.send('✅ Postiz backend is running.');
 });
   const port = process.env.PORT || 3000;
-
+const host = '0.0.0.0'; // ✅ add this
   try {
     await app.listen(port);
 
