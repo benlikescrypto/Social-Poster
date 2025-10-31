@@ -4,7 +4,7 @@
   "description": "Postiz backend API (NestJS)",
   "scripts": {
     "dev": "nest start --watch",
-    "build": "nest build",
+    "build": "cross-env NODE_ENV=production nest build apps/backend",
     "start": "node dist/main.js",
     "start:prod": "node dist/main.js"
   },
