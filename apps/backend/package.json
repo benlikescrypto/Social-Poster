@@ -4,7 +4,7 @@
   "description": "Postiz backend API (NestJS)",
   "scripts": {
   "dev": "nest start --watch",
-  "build": "nest build --path tsconfig.build.json",
+  "build": "NODE_OPTIONS='--max-old-space-size=512' nest build --path tsconfig.build.json",
   "start": "node dist/src/main.js",
   "start:prod": "node dist/src/main.js"
 },
