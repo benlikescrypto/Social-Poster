@@ -1,5 +1,5 @@
 import { initializeSentry } from '@gitroom/nestjs-libraries/sentry/initialize.sentry';
-initializeSentry('backend', true);
+//initializeSentry('backend', true);
 
 import { loadSwagger } from '@gitroom/helpers/swagger/load.swagger';
 import { json } from 'express';
@@ -63,7 +63,7 @@ const host = '0.0.0.0'; // ✅ add this
   try {
 await app.listen(port, '0.0.0.0');
 
-    checkConfiguration(); // Do this last, so that users will see obvious issues at the end of the startup log without having to scroll up.
+    //checkConfiguration(); // Do this last, so that users will see obvious issues at the end of the startup log without having to scroll up.
 
     Logger.log(`🚀 Backend is running on: http://localhost:${port}`);
   } catch (e) {
