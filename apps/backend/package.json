@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "nest start --watch",
     "build": "cross-env NODE_ENV=production nest build apps/backend",
-    "start": "node dist/main.js",
+    "start": "node dist/apps/backend/src/main.js",
     "start:prod": "node dist/main.js"
   },
   "dependencies": {
