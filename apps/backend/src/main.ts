@@ -61,8 +61,7 @@ async function bootstrap() {
   app.useGlobalFilters(new HttpExceptionFilter());
 
   loadSwagger(app);
-  const httpAdapter = app.getHttpAdapter();
-httpAdapter.get('/', (req, res) => {
+  app.getHttpAdapter().get('/', (req, res) => {
   res.send('✅ Postiz backend is running.');
 });
   const port = process.env.PORT || 3000;
